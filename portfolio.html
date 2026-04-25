@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — DStorm Digital</title>
+  <meta name="description" content="See what DStorm Digital has built — from faith-centered relationship platforms to custom web apps and mobile experiences." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+<nav id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-main">DStorm <span>Digital</span></span>
+      <span class="nav-logo-sub">A DStorm Consulting Company</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- ── Page Hero ──────────────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our Work</span>
+    <h1>Built with intention.<br>Deployed with care.</h1>
+    <p>Every project we ship is something we'd be proud to put our name on. Here's what we've built.</p>
+  </div>
+</section>
+
+<hr class="gold" />
+
+<!-- ── Portfolio ─────────────────────────────────────────────────────────── -->
+<section style="background: var(--white);">
+  <div class="container">
+
+    <!-- Featured: ALIGN -->
+    <div class="portfolio-featured">
+      <span class="portfolio-badge">Featured Project</span>
+      <h2>ALIGN — Faith-Centered Relationship Platform</h2>
+      <p>
+        A full-stack relationship readiness platform built on the Six Pillars framework from Thomas Marks' book <em>Relationship Fitness</em>. ALIGN helps Christian singles grow spiritually, mentally, financially, physically, and in character before pursuing a relationship — then algorithmically matches them based on pillar alignment scores.
+      </p>
+      <p>
+        Built entirely by DStorm Digital from concept to production. The platform includes a Next.js web app with Stripe subscription billing, Supabase PostgreSQL database, a custom six-pillar matching engine, photo moderation, real-time messaging, admin dashboard, and a companion React Native iOS app.
+      </p>
+      <div class="portfolio-tags">
+        <span class="tag">Next.js 14</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Stripe</span>
+        <span class="tag">React Native</span>
+        <span class="tag">iOS App</span>
+        <span class="tag">Vercel</span>
+        <span class="tag">Prisma ORM</span>
+        <span class="tag">NextAuth.js</span>
+      </div>
+      <a href="https://app.alignfaith.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+        View Live — app.alignfaith.com →
+      </a>
+    </div>
+
+    <!-- What was built -->
+    <div class="cards-grid" style="margin-bottom: 80px;">
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Web Platform</h3>
+        <p>Full-stack Next.js application with user authentication, profile onboarding, Six Pillar assessment, matching engine, real-time messaging, and Stripe subscription billing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Matching Engine</h3>
+        <p>Custom algorithm that calculates alignment scores across all six pillars, applies weighted scoring, and produces tiered match results (Excellent, Strong, Moderate).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🍎</div>
+        <h3>iOS App</h3>
+        <p>React Native companion app for iOS with Supabase auth, assessment submission, pillar score tracking, alignments tab, and photo upload flow.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Admin Dashboard</h3>
+        <p>Full internal admin panel with user management, photo moderation queue, subscription analytics, audit log, and content management for CMS pages.</p>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="section-header">
+      <span class="eyebrow">More Projects</span>
+      <h2>Growing our portfolio.</h2>
+      <p>We take on a small number of projects at a time so every client gets our full attention.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🚧</div>
+        <h3>Coming Soon</h3>
+        <p>Next project launching 2026 — reach out to claim a spot.</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🔒</div>
+        <h3>Client Confidential</h3>
+        <p>Some projects are under NDA. References available on request.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CTA Banner ─────────────────────────────────────────────────────────── -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Want to be our next<br>case study?</h2>
+    <p>We're selective about what we take on — which means if we say yes, we're all in.</p>
+    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">DStorm <span>Digital</span></div>
+        <div class="footer-tagline">Where Faith Meets Technology.</div>
+        <div class="footer-subbrand">A DStorm Consulting Company</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 DStorm Consulting Inc. All rights reserved.</span>
+      <a href="mailto:thomas@dstormpg.com" class="footer-email">thomas@dstormpg.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMobile = document.getElementById('nav-mobile');
+  hamburger.addEventListener('click', () => navMobile.classList.toggle('open'));
+</script>
+</body>
+</html>
