@@ -19,6 +19,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="portfolio.html" class="active">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -29,6 +30,7 @@
   <div class="nav-mobile" id="nav-mobile">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
     <a href="portfolio.html" class="active">Portfolio</a>
     <a href="contact.html">Contact</a>
   </div>
@@ -49,30 +51,28 @@
 <section style="background: var(--white);">
   <div class="container">
 
-    <!-- Featured: ALIGN -->
-    <div class="portfolio-featured">
+    <!-- Featured: Covenant CRM -->
+    <div class="portfolio-featured-light">
       <span class="portfolio-badge">Featured Project</span>
-      <h2>ALIGN — Faith-Centered Relationship Platform</h2>
+      <h2>Covenant CRM <span class="portfolio-featured-tagline">— Inspect what you expect</span></h2>
       <p>
-        A full-stack relationship readiness platform built on the Six Pillars framework from Thomas Marks' book <em>Relationship Fitness</em>. ALIGN helps Christian singles grow spiritually, mentally, financially, physically, and in character before pursuing a relationship — then algorithmically matches them based on pillar alignment scores.
+        A customer relationship management platform built for real estate professionals — and adaptable to any relationship-driven business. Covenant CRM directly increases productivity by managing opportunities, contacts, leads, and follow-up in a single focused workflow.
       </p>
       <p>
-        Built entirely by DStorm Digital from concept to production. The platform includes a Next.js web app with Stripe subscription billing, Supabase PostgreSQL database, a custom six-pillar matching engine, photo moderation, real-time messaging, admin dashboard, and a companion React Native iOS app.
+        Built entirely by DStorm Digital from concept to production. The platform includes a Next.js 15 web app with Clerk authentication, AI-powered insight generation via Anthropic Claude Haiku 4.5, Prisma ORM, opportunity pipeline tracking, contact and lead management, and structured follow-up workflows.
       </p>
       <div class="portfolio-tags">
-        <span class="tag">Next.js 14</span>
+        <span class="tag">Next.js 15</span>
         <span class="tag">TypeScript</span>
-        <span class="tag">Supabase</span>
+        <span class="tag">Clerk</span>
+        <span class="tag">Prisma</span>
         <span class="tag">PostgreSQL</span>
+        <span class="tag">Claude AI</span>
         <span class="tag">Stripe</span>
-        <span class="tag">React Native</span>
-        <span class="tag">iOS App</span>
         <span class="tag">Vercel</span>
-        <span class="tag">Prisma ORM</span>
-        <span class="tag">NextAuth.js</span>
       </div>
-      <a href="https://app.alignfaith.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-        View Live — app.alignfaith.com →
+      <a href="https://covenantcrm.com/sign-up" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+        Join the waitlist — covenantcrm.com →
       </a>
     </div>
 
@@ -81,22 +81,22 @@
       <div class="card">
         <div class="card-icon">🌐</div>
         <h3>Web Platform</h3>
-        <p>Full-stack Next.js application with user authentication, profile onboarding, Six Pillar assessment, matching engine, real-time messaging, and Stripe subscription billing.</p>
+        <p>Full-stack Next.js 15 app with TypeScript, multi-tenant Clerk authentication, server actions, and Tailwind CSS. Deployed on Vercel with edge middleware for access gating.</p>
       </div>
       <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>Matching Engine</h3>
-        <p>Custom algorithm that calculates alignment scores across all six pillars, applies weighted scoring, and produces tiered match results (Excellent, Strong, Moderate).</p>
+        <div class="card-icon">🤖</div>
+        <h3>AI Insight Engine</h3>
+        <p>Nightly cron job evaluates each contact against three behavioral rules (re-engagement, pre-approval expiring, anniversary) and generates agent-voiced first-draft messages using Anthropic Claude Haiku 4.5. Includes retry logic, dedupe, and manual edit preservation.</p>
       </div>
       <div class="card">
-        <div class="card-icon">📱</div>
-        <h3>iOS App</h3>
-        <p>React Native companion app for iOS with Supabase auth, assessment submission, pillar score tracking, alignments tab, and photo upload flow.</p>
+        <div class="card-icon">🔒</div>
+        <h3>Multi-User Privacy</h3>
+        <p>Per-rep data isolation across contacts, deals, tasks, and insights. Members see only their own records; admins can scope access by user. Backed by row-level ownership fields and a centralized access helper.</p>
       </div>
       <div class="card">
         <div class="card-icon">🛡️</div>
-        <h3>Admin Dashboard</h3>
-        <p>Full internal admin panel with user management, photo moderation queue, subscription analytics, audit log, and content management for CMS pages.</p>
+        <h3>Admin Tools</h3>
+        <p>Closed beta approval queue, tier management (Standard, Brokerage, Lifetime Free, Internal), audit logging, organization suspension, and platform admin impersonation for support workflows.</p>
       </div>
     </div>
 
@@ -108,8 +108,7 @@
     </div>
     <div class="portfolio-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
 
-      <div class="proj-card featured-card">
-        <span class="proj-card-badge">Featured Project</span>
+      <div class="proj-card">
         <h3>ALIGN</h3>
         <p>Faith-centered relationship readiness platform built on the Six Pillars framework. Full-stack web app with matching engine, Stripe billing, admin dashboard, and companion iOS app.</p>
         <div class="proj-tags">
@@ -170,9 +169,21 @@
           <span class="proj-tag">Supabase</span>
           <span class="proj-tag">iOS</span>
         </div>
+        <!-- TODO: update App Store status after Apple review concludes -->
         <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem; font-weight:600; color:var(--slate); margin-top:auto;">
-          📱 App Store — Pending Apple Review
+          📱 Available on iOS
         </span>
+      </div>
+
+      <div class="proj-card">
+        <h3>Covenant CRM</h3>
+        <p>AI-powered CRM for solo sales professionals. Currently in private beta with select real estate agents.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Next.js</span>
+          <span class="proj-tag">Claude AI</span>
+          <span class="proj-tag">Prisma</span>
+        </div>
+        <a href="https://covenantcrm.com/sign-up" target="_blank" rel="noopener noreferrer" class="proj-link">Join the waitlist →</a>
       </div>
 
     </div>
@@ -201,6 +212,7 @@
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
